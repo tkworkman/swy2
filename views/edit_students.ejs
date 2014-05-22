@@ -1,0 +1,47 @@
+<%- include layouts/header.ejs %>
+
+        <div class="page-data">
+            
+            <form method="post" action="/students/edit/<%=data[0].id%>">
+                <table cellpadding="11">
+                    <tr>
+                        <td class="label">First Name</td><td>: <input type="text" name="fname" value="<%=data[0].fname%>" required></td>
+                    </tr>
+                    <tr>
+                        <!--<td class="label" valign="top">Last Name</td>
+                        <td valign="top">:
+                            <textarea name="lname" required cols="30" rows="5"><%=data[0].lname%></textarea>
+                        </td>
+                        value="<%=data[0].bday%>"
+                        value="2011-01-13"
+                        -->
+                         <td class="label">Last Name</td><td>: <input type="text" name="lname" value="<%=data[0].lname%>" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Birthday</td><td>: <input type="date" value="<%=data[0].bday%>" name="bday" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Gender</td><td>: <input type="text" value="<%=data[0].gender%>" name="gender" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Email</td><td>: <input type="text" value="<%=data[0].email%>" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Phone</td><td>: <input type="text" name="phone" value="<%=data[0].phone%>" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Class</td><td>: <input type="text" value="<%=data[0].classid%>" name="Class" required></td>
+                    </tr>
+                    <tr>
+                        <td class="label"></td>
+                        <td>
+                            &nbsp; <input type="submit" name="submit" value="Save">
+                           <input type="button" name="cancel" value="Cancel" class="cancel" onClick="cancelAdd()">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+        
+<%- include layouts/footer.ejs %>

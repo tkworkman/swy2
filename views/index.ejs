@@ -1,0 +1,41 @@
+<html>
+    <head>
+        
+        <title><%=(locals.title) ? title :''%></title>
+        <script type="text/javascript" src="/../js/all.js"></script>
+    </head>
+    <body>
+        <h1><%=(locals.title) ? title :''%></h1>
+        <h2></h2>
+
+        <div class="data-btn">
+            <button onClick="showUsers();">Show Students</button>
+
+            <fieldset>
+                <legend>Take Attendance</legend>
+                Select Class and Date :
+                <select name="decision">
+                    <option selected>Class
+                    <option>Laurel
+                    <option>MiaMaid
+                    <option>Beehive
+                    <option>Priest
+                    <option>Teacher
+                    <option>Deacon
+                    <option>Sunday School 17
+                    <option>Sunday School 16
+                    <option>Sunday School 15
+                    <option>Sunday School 14
+                    <option>Sunday School 13
+                    <option>Sunday School 12
+                    <option>Primary
+                </select>
+                Date: <input type="date" name="attdate">
+                <button onClick="takeAttendance();">Go</button>
+            </fieldset>
+
+        </div>
+
+    </body>
+
+</html>
